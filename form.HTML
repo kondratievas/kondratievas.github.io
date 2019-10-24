@@ -4,15 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <title>Элементы формы(HTML5)</title>
+    <style>
+        .form-html5 {
+            background-color: aqua;
+            /*        width: 50%;*/
+            max-width: 700px;
+            min-width: 700px;
+
+
+            margin-left: auto;
+            margin-right: auto;
+
+            padding: 15px;
+
+            border: 15px double #039b0e;
+            border-left: red dotted;
+
+            /*dotted dashed groove ridge inset outset double*/
+
+        }
+
+        .form-group {
+            line-height: 180%;
+
+        }
+
+
+        .lbl-header {
+            font-size: 15px;
+            font-family: "verdana", sans-serif;
+
+            color: blue;
+            text-transform: uppercase
+        }
+
+        .lbl {
+            color: black;
+            font-style: italic;
+
+        }
+
+        .btn {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            padding: 7px 15px;
+
+            border: none;
+
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1.3px;
+            color: red;
+            text-transform: uppercase;
+            box-shadow: 1px 2px 3px 0 rgba (77, 96, 83, 0.53);
+            transition: transform 500ms;
+
+        }
+
+        .btn-reset {
+            background-color: green;
+            margin-right: 15px;
+            color: yellow;
+
+        }
+
+        .btn-submit {}
+
+    </style>
+
+
+
+
+
+
 </head>
 
 <body>
 
 
-    <form action="#" method="post" class="html5">
+    <form action="#" method="post" class="form-html5">
 
         <div class="form-group">
-            <label class="lbl-header" for="login">Логин: </label>
+            <label class="lbl-header" for="login">Логин:</label>
             <input type="text" id="login" class="inpt">
         </div>
 
@@ -21,31 +94,37 @@
             <input type="password" id="pswd" class="inpt">
         </div>
 
-
-        <label for="">Пол</label>
         <div class="form-group">
-            <label for="m">Муж </label> <input type="radio" id="m" checked name="sex">
-            <label for="w">Жен</label><input type="radio" id="w" name="sex">
+            <label for="lbl-header">Пол:</label>
         </div>
 
-
-        <label class="lbl-header" for="">Хобби</label>
+        <div class="form-group">
+            <label class="lbl" for="m">Муж</label>
+            <input type="radio" id="m" checked name="sex">
+            <label class="lbl" for="w">Жен</label>
+            <input type="radio" id="w" name="sex">
+        </div>
 
         <div class="form-group">
-            <label for="football">Футбол </label>
+            <label class="lbl-header">Хобби:</label>
+        </div>
+
+        <div class="form-group">
+            <label class="lbl" for="football">Футбол </label>
             <input type="checkbox" id="football" checked name="hobbi">
 
-            <label for="volleyball">Волейбол</label>
+            <label class="lbl" for="volleyball">Волейбол</label>
             <input type="checkbox" id="volleyball" name="hobbi">
 
-            <label for="basketball">Баскетбол</label>
+
+            <label class="lbl" for="basketball">Баскетбол</label>
             <input type="checkbox" id="basketball" name="hobbi">
         </div>
-        
+
         <div class="form-group">
-            <input type="reset" value="Очистить">
-            <button type="submit">Отправить</button>
-        
+            <input class="btn btn-reset" type="reset" value="Очистить">
+            <button class="btn btn-submit" type="submit">Отправить</button>
+
         </div>
 
     </form>
