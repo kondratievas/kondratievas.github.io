@@ -73,6 +73,15 @@
             color: black;
 
         }
+        
+        @media (max-width: 600px) { 
+            body {
+                background-color: #ffdfac;
+        }
+            .fld-add {
+                display: none;
+            }
+        }
 
     </style>
 
@@ -87,44 +96,44 @@
 
 
     <form action="#" method="post" class="form-html5">
-       
+
         <fieldset>
-       <legend>Основные данные</legend> 
+            <legend>Основные данные</legend>
+
+            <div class="form-group">
+                <label class="lbl-header" for="login">Логин:</label>
+                <input type="text" id="login" class="inpt" required>
+            </div>
+
+            <div class="form-group">
+                <label class="lbl-header" for="pswd">Пароль: </label>
+                <input type="password" id="pswd" class="inpt">
+            </div>
+
+            <div class="form-group">
+                <label class="lbl-header" for="tel">Телефон: </label>
+                <input type="tel" id="tel" class="inpt" placeholder="+7(913)1234567">
+            </div>
+        </fieldset>
 
         <div class="form-group">
-            <label class="lbl-header" for="login">Логин:</label>
-            <input type="text" id="login" class="inpt" required>
-        </div>
-
-        <div class="form-group">
-            <label class="lbl-header" for="pswd">Пароль: </label>
-            <input type="password" id="pswd" class="inpt">
-        </div>
-
-        <div class="form-group">
-            <label class="lbl-header" for="tel">Телефон: </label>
-            <input type="tel" id="tel" class="inpt" placeholder="+7(913)1234567">
-                   </div>
-                   </fieldset>
-           
-           <div class="form-group">
             <label class="lbl-header">Ваш любимый цвет:</label>
             <input name="color" type="color" class="inpt" value="#ffaaaa">
-            <hr style="width: 50%; margin:10px 0; border: 2px groove #13e29a"  >
+            <hr style="width: 50%; margin:10px 0; border: 2px groove #13e29a">
         </div>
         <textarea name="delivery" cols="30" rows="5" placeholder="Адрес доставки"></textarea>
 
 
-  <fieldset>
-       <legend>Всякая ерунда</legend> 
-        <div class="form-group">
-            <label class="date" for="date">Дата </label>
-            <input type="date" id="date" class="inpt" </div> <div class="form-group">
-            <label class="lbl-header" for="num">Количество: </label>
-            <input type="number" id="num" class="inpt" min="0" max="100" step="5">
-            </fieldset>
+        <fieldset>
+            <legend>Всякая ерунда</legend>
+            <div class="form-group">
+                <label class="date" for="date">Дата </label>
+                <input type="date" id="date" class="inpt" </div> <div class="form-group">
+                <label class="lbl-header" for="num">Количество: </label>
+                <input type="number" id="num" class="inpt" min="0" max="100" step="5">
+        </fieldset>
         </div>
-        
+
 
         <div class="form-group">
             <label class="lbl-header" for="range">Возраст:</label><span>14</span>
@@ -139,17 +148,17 @@
                         <option value="by" selected>Беларусь</option>
                         <option value="kz">Казахстан</option>
                     </optgroup>
-                    
-                                    
-     <optgroup label="Страны">                    
-                    <option value="kz">Казахстан</option>
-                    <option value="kz">Казахстан</option>
-                    <option value="kz">Казахстан</option>
+
+
+                    <optgroup label="Страны">
+                        <option value="kz">Казахстан</option>
+                        <option value="kz">Казахстан</option>
+                        <option value="kz">Казахстан</option>
                 </select>
                 </optgroup>
-                
-                
-                
+
+
+
 
             </div>
 
